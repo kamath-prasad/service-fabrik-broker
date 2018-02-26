@@ -129,7 +129,7 @@ describe('Jobs', function () {
       getScheduleStub.restore();
     });
 
-    it('should delete scheduled backup older than 14 days', function (done) {
+    it.only('should delete scheduled backup older than 14 days', function (done) {
       mocks.cloudProvider.list(container, undefined, [
         fileName16Daysprior
       ]);
